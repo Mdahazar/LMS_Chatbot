@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Frontend</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Chatbot icon (floating button) -->
+    <div class="chat-icon" id="chatIcon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot popup (hidden by default) -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <span>Chat Assistant</span>
+            <div style="display: flex; gap: 10px;">
+                <i class="fas fa-trash-alt" id="clearChat"></i>
+                <i class="fas fa-times" id="closeChat"></i>
+            </div>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

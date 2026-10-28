@@ -1,0 +1,9 @@
+backend/venv/
+venv/
+__pycache__/
+*.py[cod]
+backend/chroma_db/
+*.sqlite3
+.env
+.env.*
+!.env.example
